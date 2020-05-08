@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharacterDetailActivity">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Poder"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="Poder" />
+
+        <ImageView
+            android:id="@+id/ivPower"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/starts1" />
+
+        <TextView
+            android:id="@+id/tvHealt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="Saúde" />
+
+        <ImageView
+            android:id="@+id/ivHealth"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/starts2" />
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="Mobilidade" />
+
+        <ImageView
+            android:id="@+id/ivSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/starts3" />
+
+        <TextView
+            android:id="@+id/tvTechnique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="Técnica" />
+
+        <ImageView
+            android:id="@+id/ivTechnique"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/starts4" />
+
+        <TextView
+            android:id="@+id/tvReach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="Alcance" />
+
+        <ImageView
+            android:id="@+id/ivReach"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/starts4" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
